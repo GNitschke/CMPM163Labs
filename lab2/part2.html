@@ -19,13 +19,17 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
 			renderer.setSize(window.innerWidth, window.innerHeight);
 			document.body.appendChild(renderer.domElement);
 			camera.position.x = 200;
-			// camera.position.z = 200;
-			// camera.rotation.y = 0.785398;
-			camera.rotation.y = 1.5708;
+			camera.position.z = -200;
+			camera.rotation.y = 2.35619;
+			// camera.rotation.y = 1.5708;
 
 			var light = new THREE.PointLight(0xffffff, 1, 1000);
 			light.position.set(50, 50, 50);
 			scene.add(light);
+
+			var light2 = new THREE.PointLight(0xFF00FF, 1, 1000);
+			light2.position.set(0, 69, -1);
+			scene.add(light2);
 
 			var loader = new THREE.GLTFLoader();
 			loader.load('dog.glb', function (gltf) {
