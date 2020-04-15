@@ -49,17 +49,20 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
 			console.error(error);
 			});
 
-			// var loader2 = new THREE.GLTFLoader();
-			// loader2.load('cat.glb', function (gltf) {
-			// scene.add(gltf.scene);
-			// gltf.scene.rotation.x = -0.9;
-			// gltf.scene.position.y = 70;
-			// gltf.scene.position.z = 15;
-			// }, function (xhr) {
-			// console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
-			// }, function (error) {
-			// console.error(error);
-			// });
+			var loader2 = new THREE.GLTFLoader();
+			loader2.load('cup.glb', function (gltf) {
+			scene.add(gltf.scene);
+			gltf.scene.scale.x = 1.5;
+			gltf.scene.scale.y = 1.5;
+			gltf.scene.scale.z = 1.5;
+			gltf.scene.rotation.x = 3.14159265;
+			gltf.scene.position.y = 70;
+			gltf.scene.position.z = 15;
+			}, function (xhr) {
+			console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+			}, function (error) {
+			console.error(error);
+			});
 
 			function animate() {
 				requestAnimationFrame(animate);
