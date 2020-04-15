@@ -18,7 +18,8 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
 			var renderer = new THREE.WebGLRenderer();
 			renderer.setSize(window.innerWidth, window.innerHeight);
 			document.body.appendChild(renderer.domElement);
-			camera.position.z = 200;
+			camera.position.x = 200;
+			camera.rotation.y = 1.5708
 
 			var light = new THREE.PointLight(0xffffff, 1, 1000);
 			light.position.set(50, 50, 50);
@@ -27,7 +28,6 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
 			var loader = new THREE.GLTFLoader();
 			loader.load('dog.glb', function (gltf) {
 			scene.add(gltf.scene);
-			gltf.scene.rotation.y = -0.7;
 			}, function (xhr) {
 			console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
 			}, function (error) {
@@ -37,11 +37,29 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
 			var loader2 = new THREE.GLTFLoader();
 			loader2.load('cat.glb', function (gltf) {
 			scene.add(gltf.scene);
+			gltf.scene.scale.x = 0.7;
+			gltf.scene.scale.y = 0.7;
+			gltf.scene.scale.z = 0.7;
+			gltf.scene.rotation.x = -0.9;
+			gltf.scene.position.y = 62;
+			gltf.scene.position.z = 17;
 			}, function (xhr) {
 			console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
 			}, function (error) {
 			console.error(error);
 			});
+
+			// var loader2 = new THREE.GLTFLoader();
+			// loader2.load('cat.glb', function (gltf) {
+			// scene.add(gltf.scene);
+			// gltf.scene.rotation.x = -0.9;
+			// gltf.scene.position.y = 70;
+			// gltf.scene.position.z = 15;
+			// }, function (xhr) {
+			// console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+			// }, function (error) {
+			// console.error(error);
+			// });
 
 			function animate() {
 				requestAnimationFrame(animate);
