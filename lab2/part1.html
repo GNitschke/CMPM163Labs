@@ -24,29 +24,36 @@
      		var cube = new THREE.Mesh(geometry, material);
 			scene.add(cube);
 
-			var geometry1 = new THREE.BoxGeometry();
-			var material1 = new THREE.MeshBasicMaterial( {color: 0x80BBE8} );
-     		var cube1 = new THREE.Mesh(geometry1, material1);
-			scene.add(cube1);
-			cube1.position.set(2, 0, 0);
+			var fredgeometry = new THREE.BoxGeometry();
+			var fredmaterial = new THREE.MeshBasicMaterial( {color: 0x80BBE8} );
+     		var fred = new THREE.Mesh(fredgeometry, fredmaterial);
+			scene.add(fred);
+			fred.position.set(2, 0, 0);
 
-			var geometry2 = new THREE.BoxGeometry();
-			var material2 = new THREE.MeshBasicMaterial( {color: 0x92FFA4} );
-     		var cube2 = new THREE.Mesh(geometry2, material2);
-			scene.add(cube2);
-			cube2.position.set(-2, 0, 0);
+			var sarahgeometry = new THREE.BoxGeometry();
+			var sarahmaterial = new THREE.MeshBasicMaterial( {color: 0x92FFA4} );
+     		var sarah = new THREE.Mesh(sarahgeometry, sarahmaterial);
+			scene.add(sarah);
+			sarah.position.set(-2, 0, 0);
 
 
 			camera.position.z = 5; //this moves the camera towards the viewer
+			
+			var count = 0;
+			var scale = 1.2;
 
 			function animate() {
 				requestAnimationFrame(animate);
 				renderer.render(scene, camera);
 				geometry.rotateX(0.01);
 				geometry.rotateY(0.01);
-				geometry1.rotateX(0.01);
-				geometry2.rotateY(0.01);
-
+				fredgeometry.scale(0.0, scale, 0.0);
+				sarahgeometry.rotateY(0.01);
+				count++;
+				if(count%50 == 0){
+					scale *= -1;
+				}
+				//console.log(scale);
 			}
 			animate();
 
