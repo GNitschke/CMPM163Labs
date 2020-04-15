@@ -40,20 +40,20 @@
 			camera.position.z = 5; //this moves the camera towards the viewer
 			
 			var count = 0;
-			var scale = 1.2;
+			var speed = 0.1;
 
 			function animate() {
 				requestAnimationFrame(animate);
 				renderer.render(scene, camera);
 				geometry.rotateX(0.01);
 				geometry.rotateY(0.01);
-				fredgeometry.scale(0.0, scale, 0.0);
-				sarahgeometry.rotateY(0.01);
+				fredgeometry.translate(0.0, speed, 0.0);
+				sarahgeometry.rotateX(0.01);
+				sarahgeometry.translate(0, 0, 0.01);
 				count++;
-				if(count%50 == 0){
-					scale *= -1;
+				if(count%20 == 0){
+					speed *= -1;
 				}
-				//console.log(scale);
 			}
 			animate();
 
