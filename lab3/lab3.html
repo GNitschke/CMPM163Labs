@@ -43,22 +43,6 @@
 			light.position.set(10, 10, 10);
 			scene.add(light);
 
-			function animate() {
-				requestAnimationFrame(animate);
-				geometry.rotateX(0.01);
-				geometry.rotateY(0.01);
-				howardgeometry.rotateX(0.01);
-				howardgeometry.rotateY(0.01);
-
-				if(geometry1) {
-					geometry1.rotateX(0.01);
-					geometry1.rotateY(0.01);
-				}
-
-				renderer.render(scene, camera);
-			}
-			animate();
-
 			loader.load('shaders/vertexShader.vert',
 				// onLoad callback
 				function (data) {
@@ -77,21 +61,38 @@
 				});
 
 			loader.load('shaders/fragmentShader.frag',
-			// onLoad callback
-			function (data) {
-					console.log(data); // output the text to the console
-					fshader = data;
-					count += 1;
-					addCoolCube(); // we will write this method
-			},
-			// onProgress callback
-			function (xhr) {
-				console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
-			},
-			// onError callback
-			function (err) {
-				console.error('An error happened');
-			});
+				// onLoad callback
+				function (data) {
+						console.log(data); // output the text to the console
+						fshader = data;
+						count += 1;
+						addCoolCube(); // we will write this method
+				},
+				// onProgress callback
+				function (xhr) {
+					console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
+				},
+				// onError callback
+				function (err) {
+					console.error('An error happened');
+				});
+
+			loader.load('shaders/fragmentShader2.frag',
+				// onLoad callback
+				function (data) {
+						console.log(data); // output the text to the console
+						fshader = data;
+						count += 1;
+						addCoolCube(); // we will write this method
+				},
+				// onProgress callback
+				function (xhr) {
+					console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
+				},
+				// onError callback
+				function (err) {
+					console.error('An error happened');
+				});
 
 			var geometry1, material1, mesh1;
 
@@ -112,8 +113,49 @@
 					mesh1 = new THREE.Mesh(geometry1, material1);
 					mesh1.position.x = 2;
 					scene.add(mesh1);
+				}
+				else if(count ==  3) {
+					let uniforms = {
+						colorD: {type: 'vec3', value: new THREE.Color(0x000000)},
+						colorC: {type: 'vec3', value: new THREE.Color(0xFFFF00)},
+						colorB: {type: 'vec3', value: new THREE.Color(0xFF00FF)},
+						colorA: {type: 'vec3', value: new THREE.Color(0x00FFFF)},
+						time: {type: 'float', value: 0}
+	 				};
+
+					geometry2 = new THREE.BoxGeometry(1, 1, 1);
+					material2 =  new THREE.ShaderMaterial({
+						uniforms: uniforms,
+						fragmentShader: fshader,
+						vertexShader: vshader,
+						precision: "mediump"});
+
+					mesh2 = new THREE.Mesh(geometry2, material2);
+					mesh2.position.x = -2;
+					scene.add(mesh2);
 				}	
 			}
+
+			function animate() {
+				requestAnimationFrame(animate);
+				geometry.rotateX(0.01);
+				geometry.rotateY(0.01);
+				howardgeometry.rotateX(0.01);
+				howardgeometry.rotateY(0.01);
+
+				if(geometry1) {
+					geometry1.rotateX(0.01);
+					geometry1.rotateY(0.01);
+				}
+
+				if(geometry2) {
+					geometry2.rotateX(0.01);
+					geometry2.rotateY(0.01);
+				}
+
+				renderer.render(scene, camera);
+			}
+			animate();
 
 
 		</script>
