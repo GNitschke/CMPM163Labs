@@ -32,7 +32,7 @@
 
      		// setup the cube
 			var howardgeometry = new THREE.BoxGeometry();
-      		var howardmaterial = new THREE.MeshPhysicalMaterial( { color: 0xfacade, reflectivity: 0, transparency: 1 });
+      		var howardmaterial = new THREE.MeshPhysicalMaterial( { color: 0xfacade, opacity: 0.5, metalness: 1, transparent: true, side: THREE.DoubleSide });
       		var howardcube = new THREE.Mesh( howardgeometry, howardmaterial );
      		scene.add(howardcube);
      		howardcube.position.set(0, 2, 0);
