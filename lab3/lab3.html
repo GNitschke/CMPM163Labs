@@ -29,13 +29,14 @@
       		var material = new THREE.MeshPhongMaterial( { color: 0xdddddd, specular: 0x00ff00, shininess: 30 });
       		var cube = new THREE.Mesh( geometry, material );
      		scene.add(cube);
+     		cube.position.set(0.5, -1, 0);
 
      		// setup the cube
 			var howardgeometry = new THREE.BoxGeometry();
-      		var howardmaterial = new THREE.MeshPhysicalMaterial( { color: 0xfacade, opacity: 0.5, metalness: 1, transparent: true, side: THREE.DoubleSide });
+      		var howardmaterial = new THREE.MeshPhysicalMaterial( { color: 0xCCEAFF, opacity: 0.5, metalness: 1, transparent: true, side: THREE.DoubleSide });
       		var howardcube = new THREE.Mesh( howardgeometry, howardmaterial );
      		scene.add(howardcube);
-     		howardcube.position.set(0, 2, 0);
+     		howardcube.position.set(-0.5, 1, 0);
 
 			// add the light
 			var light = new THREE.PointLight(0xffffff, 1, 1000);
