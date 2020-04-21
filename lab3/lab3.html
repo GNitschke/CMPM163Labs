@@ -30,6 +30,13 @@
       		var cube = new THREE.Mesh( geometry, material );
      		scene.add(cube);
 
+     		// setup the cube
+			var howardgeometry = new THREE.BoxGeometry();
+      		var howardmaterial = new THREE.MeshPhysicalMaterial( { color: 0xfacade, reflectivity: 0, transparency: 1 });
+      		var howardcube = new THREE.Mesh( howardgeometry, howardmaterial );
+     		scene.add(howardcube);
+     		howardcube.position.set(0, 2, 0);
+
 			// add the light
 			var light = new THREE.PointLight(0xffffff, 1, 1000);
 			light.position.set(10, 10, 10);
@@ -39,6 +46,8 @@
 				requestAnimationFrame(animate);
 				geometry.rotateX(0.01);
 				geometry.rotateY(0.01);
+				howardgeometry.rotateX(0.01);
+				howardgeometry.rotateY(0.01);
 
 				if(geometry1) {
 					geometry1.rotateX(0.01);
