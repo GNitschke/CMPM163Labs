@@ -1,5 +1,10 @@
 # CMPM163Labs
 
+lab 4:
+a. floor(u*8)
+b. abs((floor(v*8))-7)
+c. white
+
 lab3: 
 https://drive.google.com/file/d/1q3VVaUCCvEHGWW4GTktvQ2eQW8UYZE-g/view?usp=sharing
 
