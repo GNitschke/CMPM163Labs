@@ -2,6 +2,7 @@
 
 lab 4:
 https://drive.google.com/file/d/1CIIhmlRQ-SyYS7BtCvSWy9Gub_zFSeqe/view?usp=sharing
+
 a. floor(u*8)
 b. abs((floor(v*8))-7)
 c. white
