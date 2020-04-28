@@ -5,6 +5,8 @@ a. floor(u*8)
 b. abs((floor(v*8))-7)
 c. white
 
+The top left cube has a texture and normal map using Three.js, The bottom left cube has just a texture using THREE.js, the middle cube has a texture and normal map using THREE.js, the bottom right cube is textured by the fragment shader in the lab, and the top right is the tiled texture from my fragment shader which I tiled by modding the coordinates by 0.5 to divide each side into 4 textures and then multiplied that by 2 so it would use the whole length of the texture instead of just one half along the x and y axis making it look like just a quarter of the texture in each quadrant.
+
 lab3: 
 https://drive.google.com/file/d/1q3VVaUCCvEHGWW4GTktvQ2eQW8UYZE-g/view?usp=sharing
 
