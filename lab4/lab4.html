@@ -45,10 +45,7 @@
 
 			function addTextureShaderCube() {
 				if(count == 2) {
-					let uniforms = {
-		        		colorB: {type: 'vec3', value: new THREE.Color(0xACB6E5)},
-		        		colorA: {type: 'vec3', value: new THREE.Color(0x74ebd5)}
-        	 		};
+		        	var uniforms = {texture1: { type: "t", value: THREE.ImageUtils.loadTexture("171.jpg")}};
 	
 		      		geometry1 = new THREE.BoxGeometry(1, 1, 1);
 		      		material1 =  new THREE.ShaderMaterial({
