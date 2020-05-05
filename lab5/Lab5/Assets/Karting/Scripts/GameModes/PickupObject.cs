@@ -7,14 +7,14 @@ public class PickupObject : TargetObject
 {
     [Header("PickupObject")]
 
-    [Tooltip("New Gameobject (a VFX for example) to spawn when you trigger this PickupObject")]
-    public GameObject spawnPrefabOnPickup;
+    [Tooltip("New Gameobject (a VFX for example) to destroy when you trigger this PickupObject")]
+    public GameObject destroyPrefabOnPickup;
 
-    [Tooltip("Destroy the spawned spawnPrefabOnPickup gameobject after this delay time. Time is in seconds.")]
-    public float destroySpawnPrefabDelay = 10;
+    [Tooltip("Change the spawned spawnPrefabOnPickup gameobject after this delay time. Time is in seconds.")]
+    public float destroySpawnPrefabDelay = 0;
     
     [Tooltip("Destroy this gameobject after collectDuration seconds")]
-    public float collectDuration = 0f;
+    public float collectDuration = 2f;
 
     void Start() {
         Register();
@@ -27,10 +27,9 @@ public class PickupObject : TargetObject
             AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
         }
 
-        if (spawnPrefabOnPickup)
+        if (destroyPrefabOnPickup)
         {
-            var vfx = Instantiate(spawnPrefabOnPickup, CollectVFXSpawnPoint.position, Quaternion.identity);
-            Destroy(vfx, destroySpawnPrefabDelay);
+            destroyPrefabOnPickup.GetComponent<ParticleSystemForceField>().rotationSpeed = 0f;
         }
                
         Objective.OnUnregisterPickup(this);
