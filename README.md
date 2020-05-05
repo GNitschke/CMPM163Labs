@@ -1,5 +1,10 @@
 # CMPM163Labs
 
+lab 5:
+Part 1
+I made 4 particle systems for the kart and made them flat box emmitters coming from the wheels in world space so they left trails.
+Then I attatched some swirlinjg particle systems to the checkpoints that do an extra bunching up flair behavior when you pass through the checkpoint.
+
 lab 4:
 https://drive.google.com/file/d/1CIIhmlRQ-SyYS7BtCvSWy9Gub_zFSeqe/view?usp=sharing
 
