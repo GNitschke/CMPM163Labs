@@ -3,6 +3,9 @@
 lab 6:
 Point light is like a lightbulb and lights based off its position in the scene, directional light lights all objects in the scene from the direction it specifies no matter where it is in the scene, spotlights are like flash lights and illuminate in a cone shape where they are pointing from where they are positioned in the scene, area lights shine in all directions to one side of a rectangular plane but only works with baked lighting.
 
+Material:
+![](images/MaterialLab6.png)
+
 lab 5:
 https://drive.google.com/file/d/1KQztpIsQET1WH8Y5CKJT7LT5hyB5VVPs/view?usp=sharing
 Part 1
