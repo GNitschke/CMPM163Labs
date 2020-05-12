@@ -5,6 +5,7 @@ Point light is like a lightbulb and lights based off its position in the scene, 
 
 Material:
 ![](images/MaterialLab6.PNG)
+I chose my lamp because it was a simple metal surface so I dragged the metalic slider to 1 because it is a metal and then set the smoothness to 0.552 to make the reflectiveness of the light match what I saw in real life, with it being a fairly accurate reflection but some haze to it. I adjusted the Albedo color to a dark gray so it wasn't so bright and more of a dark silvery color.
 
 lab 5:
 https://drive.google.com/file/d/1KQztpIsQET1WH8Y5CKJT7LT5hyB5VVPs/view?usp=sharing
