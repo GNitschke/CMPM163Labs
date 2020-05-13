@@ -7,6 +7,10 @@ Material:
 ![](images/MaterialLab6.PNG)
 I chose my lamp because it was a simple metal surface so I dragged the metalic slider to 1 because it is a metal and then set the smoothness to 0.552 to make the reflectiveness of the light match what I saw in real life, with it being a fairly accurate reflection but some haze to it. I adjusted the Albedo color to a dark gray so it wasn't so bright and more of a dark silvery color.
 
+I took 2 textures from Lab 4 to make a wood textured box and textured a plane to look like rocks for the ground.
+I found a nice late sunset skybox texture from the unity asset store that I used for the skybox.
+![](images/Lab6FinalScene.PNG)
+
 lab 5:
 https://drive.google.com/file/d/1KQztpIsQET1WH8Y5CKJT7LT5hyB5VVPs/view?usp=sharing
 Part 1
