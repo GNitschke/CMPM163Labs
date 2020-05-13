@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 877, y: 492}
   m_MaxSize: {x: 16002, y: 14042}
   vertical: 0
-  controlID: 22
+  controlID: 35
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 602, y: 492}
   m_MaxSize: {x: 12002, y: 14042}
   vertical: 1
-  controlID: 23
+  controlID: 36
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 602, y: 221}
   m_MaxSize: {x: 12002, y: 4021}
   vertical: 0
-  controlID: 24
+  controlID: 37
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 94330000
       m_LastClickedID: 0
       m_ExpandedIDs: 74fbffff
       m_RenameOverlay:
@@ -480,9 +480,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.77208567, y: -2.037661, z: 2.3128963}
+    m_Target: {x: 1.1801691, y: -4.229453, z: 3.719379}
     speed: 2
-    m_Value: {x: -0.77208567, y: -2.037661, z: 2.3128963}
+    m_Value: {x: 1.1801691, y: -4.229453, z: 3.719379}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -528,13 +528,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.3789426, y: -0.025816755, z: 0.0105805835, w: -0.9250059}
+    m_Target: {x: -0.37598416, y: -0.088202484, z: 0.035984028, w: -0.9217239}
     speed: 2
-    m_Value: {x: -0.37873906, y: -0.03968819, z: 0.016263224, w: -0.92450917}
+    m_Value: {x: -0.37730917, y: -0.08952943, z: 0.036682054, w: -0.9210194}
   m_Size:
-    m_Target: 9.606079
+    m_Target: 12.003699
     speed: 2
-    m_Value: 9.19242
+    m_Value: 11.4867935
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -688,20 +688,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/textures
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/textures
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\gramn\Desktop\labs\CMPM163Labs\lab6\Lab 6
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fa340000
-    m_LastClickedID: 13562
-    m_ExpandedIDs: 000000008633000000ca9a3b
+    m_SelectedIDs: 94330000
+    m_LastClickedID: 13204
+    m_ExpandedIDs: 000000009433000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -729,7 +729,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086330000
+    m_ExpandedIDs: 0000000094330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
