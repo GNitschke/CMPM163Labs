@@ -65,11 +65,12 @@ Material:
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 19
+    - _Speed: 40
     - _SrcBlend: 1
-    - _Strength: 0.941
+    - _Strength: 0.414
     - _Surface: 0
     - _WorkflowMode: 1
+    - _ZSpeed: 20
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
