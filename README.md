@@ -1,5 +1,14 @@
 # CMPM163Labs
 
+lab 7:
+https://drive.google.com/file/d/1409rpF1EuCz8vkQW13lrYZ6uRicG9rsj/view?usp=sharing
+
+I made the mountain by combining the vertex shader from the tutorial with a radial gradient so its higher in the center. I also adjusted it so the displacement was in both the x and z directions unlike in the tutorial. For the waves I adjusted it so there were waves in the z direction as well to make it more interesting. I added a few sparks coming from the mountain and a skybox from the asset store as extra.
+
+My partner also did Part 1. They said  the most challenging part was changing the code for the circle to make it work on a plane for the mountain and the most interesting part was the mesh manipulation of the mountain.
+
+Neither of us helped each other on the lab.
+
 lab 6:
 ![](images/Lab6FinalScene.PNG)
 
