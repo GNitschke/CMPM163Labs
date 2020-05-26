@@ -7,6 +7,7 @@ public class buildCity : MonoBehaviour
     public GameObject[] buildings;
     public int mapWidth = 20;
     public int mapHeight = 20;
+    float buildingFootprint = 3;
 
     void Start()
     {
@@ -14,9 +15,18 @@ public class buildCity : MonoBehaviour
         {
             for(int w = 0; w < mapWidth; w++)
             {
-                Vector3 pos = new Vector3(w, 0, h);
-                int n = Random.Range(0, buildings.Length);
-                Instantiate(buildings[n], pos, Quaternion.identity);
+                int result = (int)(Mathf.PerlinNoise(w/10.0f, h/10.0f) * 10);
+                Vector3 pos = new Vector3(w * buildingFootprint, 0, h * buildingFootprint);
+                if(result < 2)
+                    Instantiate(buildings[0], pos, Quaternion.identity);
+                else if (result < 4)
+                    Instantiate(buildings[1], pos, Quaternion.identity);
+                else if (result < 6)
+                    Instantiate(buildings[2], pos, Quaternion.identity);
+                else if (result < 8)
+                    Instantiate(buildings[3], pos, Quaternion.identity);
+                else if (result < 10)
+                    Instantiate(buildings[4], pos, Quaternion.identity);
             }
         }
     }
