@@ -5,8 +5,8 @@ using UnityEngine;
 public class buildCity : MonoBehaviour
 {
     public GameObject[] buildings;
-    public int mapWidth = 20;
-    public int mapHeight = 20;
+    public int mapWidth = 200;
+    public int mapHeight = 200;
     float buildingFootprint = 1.3f;
 
     void Start()
