@@ -7,7 +7,7 @@ public class buildCity : MonoBehaviour
     public GameObject[] buildings;
     public int mapWidth = 20;
     public int mapHeight = 20;
-    float buildingFootprint = 3;
+    float buildingFootprint = 1.3f;
 
     void Start()
     {
@@ -22,12 +22,14 @@ public class buildCity : MonoBehaviour
                     Instantiate(buildings[0], pos, Quaternion.identity);
                 else if (result < 4)
                     Instantiate(buildings[1], pos, Quaternion.identity);
-                else if (result < 6)
+                else if (result < 5)
                     Instantiate(buildings[2], pos, Quaternion.identity);
-                else if (result < 8)
+                else if (result < 6)
                     Instantiate(buildings[3], pos, Quaternion.identity);
-                else if (result < 10)
+                else if (result < 7)
                     Instantiate(buildings[4], pos, Quaternion.identity);
+                else if (result < 10)
+                    Instantiate(buildings[5], pos, Quaternion.identity);
             }
         }
     }
