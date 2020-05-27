@@ -1,7 +1,7 @@
 # CMPM163Labs
 
 lab 8:
-Inspiration: ![](images/bioshock-infinite.jpeg)
+Inspiration: ![](images/bioshock-infinite.jpg)
 My city: ![](images/lab8.PNG)
 
 The city in Bioshock Infinite ispired me to make a city floating in the clouds, using another layer of noise to seperate out the heights.
