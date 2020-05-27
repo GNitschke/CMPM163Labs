@@ -8,6 +8,8 @@ My city: ![](images/lab8.PNG)
 
 The city in Bioshock Infinite ispired me to make a city floating in the clouds, using another layer of noise to seperate out the heights.
 
+My partner did not respond so I was unable to complete the check in.
+
 lab 7:
 https://drive.google.com/file/d/1409rpF1EuCz8vkQW13lrYZ6uRicG9rsj/view?usp=sharing
 
