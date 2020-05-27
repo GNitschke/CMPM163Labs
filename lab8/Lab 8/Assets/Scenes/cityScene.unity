@@ -314,7 +314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1054769855
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -420,12 +420,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildings:
-  - {fileID: 8069165109662834339, guid: 56b2837c980a00c4a97fc24866a5025e, type: 3}
-  - {fileID: 4218828799174272319, guid: 0aff819265e206c4e9846685d6d4fc6a, type: 3}
-  - {fileID: 3462631565102034797, guid: c5ced548600f1b94ea3b883ad08f3312, type: 3}
-  - {fileID: 7139216046022768196, guid: 55236ae39182d1545ae0828233db87cc, type: 3}
-  - {fileID: 6553383260311512224, guid: 676b47197914e3640bcbb357c9874e2e, type: 3}
   - {fileID: 9060204278232207114, guid: a20a4e9565ecf214d91da233a2e8bd79, type: 3}
+  - {fileID: 4820106905164392327, guid: e4ea21a4d0fc8cc42b8f1c28c9fd9b8e, type: 3}
+  - {fileID: 1393977917056613152, guid: 44988471f9c9e244f9bb3489e075e289, type: 3}
+  - {fileID: 1114689746381087935, guid: 753fac6e5257d4c4394d1134837cee36, type: 3}
+  - {fileID: 7224026618484556047, guid: d94f3ad2059cac9489cc5a117dfd7e45, type: 3}
+  - {fileID: 6608093066151785598, guid: 21cca37e4f867b943be610c33097776c, type: 3}
   mapWidth: 200
   mapHeight: 200
 --- !u!4 &1572470266
